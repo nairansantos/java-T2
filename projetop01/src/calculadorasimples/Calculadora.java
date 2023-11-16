@@ -3,7 +3,7 @@ package calculadorasimples;
 import java.util.Scanner;
 
 public class Calculadora {
-	public static void main(String[] args) {
+	public  void main(String[] args) {
 		float num1;
 		float num2;
 		String operador;
