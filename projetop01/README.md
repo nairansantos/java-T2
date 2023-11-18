@@ -8,9 +8,8 @@ Aqui estão exemplos em C++ e Java:
 
 C++:
 
-cpp
-Copy code
-// Exemplo de classe em C++
+
+//Exemplo de classe em C++
 class Car {
 public:
     string brand;
@@ -24,7 +23,6 @@ myCar.year = 2022;
 Java:
 
 java
-Copy code
 // Exemplo de classe em Java
 public class Car {
     public String brand;
@@ -35,20 +33,18 @@ public class Car {
 Car myCar = new Car();
 myCar.brand = "Toyota";
 myCar.year = 2022;
-Questao2. Declaração de Variáveis em Java:
 
+
+Questao2. Declaração de Variáveis em Java:
 Em Java, você declara uma variável da seguinte maneira:
 
 java
-Copy code
 // Declaração de variável em Java
 int myNumber = 10;
 Os tipos de dados primitivos mais comuns em Java incluem int, double, float, char, boolean, etc.
 
 Em C++, a declaração de variáveis é semelhante:
 
-cpp
-Copy code
 // Declaração de variável em C++
 int myNumber = 10;
 Os tipos de dados primitivos em C++ são semelhantes aos de Java, incluindo int, double, float, char, bool, etc.
@@ -60,35 +56,32 @@ A herança em Java permite que uma classe (subclasse) herde os campos e métodos
 Java:
 
 java
-Copy code
 // Exemplo de herança em Java
 class Animal {
-    void eat() {
-        System.out.println("Animal is eating");
+    void comer() {
+        System.out.println("o animal esta comendo!");
     }
 }
 
-class Dog extends Animal {
-    void bark() {
-        System.out.println("Dog is barking");
+class cachorro extends Animal {
+    void latir() {
+        System.out.println("o cachorro esta  latindo!");
     }
 }
+
 C++:
-
-cpp
-Copy code
 // Exemplo de herança em C++
 class Animal {
 public:
-    void eat() {
-        cout << "Animal is eating" << endl;
+    void comer() {
+        cout << "o animal está comendo" << endl;
     }
 };
 
-class Dog : public Animal {
+class cachorro : public Animal {
 public:
-    void bark() {
-        cout << "Dog is barking" << endl;
+    void latir() {
+        cout << "O cachorro está latindo!" << endl;
     }
 };
 questao4. Ponteiros em Java e C++:
