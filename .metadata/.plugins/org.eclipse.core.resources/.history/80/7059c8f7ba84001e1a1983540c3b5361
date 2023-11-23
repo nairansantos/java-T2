@@ -1,0 +1,8 @@
+package exercicioaula03;
+
+public class Cliente {
+	private String nome, cpf;
+	private int idade;
+	public Cliente(String nome,cpf)
+		
+}

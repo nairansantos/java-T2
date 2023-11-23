@@ -1,1 +1,3 @@
-.metadata
+cd nome da pasta
+dotnet build
+dotnet run

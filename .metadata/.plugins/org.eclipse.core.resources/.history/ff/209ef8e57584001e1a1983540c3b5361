@@ -1,0 +1,51 @@
+package conversordetemperatura;
+
+import java.util.Scanner;
+
+public class ConversorDeTemperatura {
+	public static void main(String[] args) {
+		double temperatura;
+		char unidadedeOrigem;
+		Scanner ler = new Scanner(System.in);
+
+		System.out.print("Insira a temperatura: ");
+		double temp = ler.nextDouble();
+		System.out.println("Digite a unidade de origem(C para Celsius, F para Fahrenheit): ");
+		unidadedeOrigem = ler.next();
+
+		double temperaturaConvertida = conversordeTemperatura(temperatura, unidadeOrigem);
+
+		if (Double.isNaN(temperaturaConvertida))
+			System.out.println("Opção inválida. Por favor, escolha C ou F.");
+	else
+
+	{
+		char unidadeDestino = (unidadeOrigem == "C" || unidadeOrigem == "c") ? "F" : "C";
+
+	}
+	{
+		System.out.println("Opção inválida. Por favor, escolha C ou F.");
+	}else
+	{
+		string unidadeOrigem = (unidadeOrigem == "C" || unidadeOrigem == "c") ? "F" : "C";
+
+		System.out
+				.println("A temperatura em " + unidadeDestino + " é: " + temperaturaConvertida + " °" + unidadeDestino);
+	}
+
+	scanner.close();
+	}
+
+	private static double converterTemperatura(double temperatura, char unidadeOrigem) {
+	        if (unidadeOrigem == "C" || unidadeOrigem == "c") {
+	           
+	            return (temperatura * 9 / 5) + 32;
+	        } else if (unidadeOrigem == "F" || unidadeOrigem == "f") {
+	            
+	            return (temperatura - 32) * 5 / 9;
+	        } else {
+	            
+	            return Double.NaN;
+	        }
+
+}

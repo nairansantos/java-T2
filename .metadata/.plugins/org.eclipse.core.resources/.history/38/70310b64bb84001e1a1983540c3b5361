@@ -1,0 +1,42 @@
+package exercicioaula03;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		String nome, cpf;
+		int idade;
+		String novonome;
+		String novocpf;
+		int novaidade;
+		
+		Scanner ler = new Scanner(System.in);
+		System.out.println("digite seu nome; ");
+		nome = ler.next();
+		System.out.println("digite seu cpf; ");
+		cpf = ler.next();
+		System.out.println("digite sua idade; ");
+		idade = ler.nextInt();
+		
+		System.out.println(" nome: ");
+		System.out.println(" cpf: ");
+		System.out.println(" idade: ");
+		Cliente novocliente = new Cliente(nome,cpf,idade);
+		
+		System.out.print("digite seu nome; ");
+		novonome = ler.next();
+		System.out.print("digite seu cpf; ");
+		novocpf = ler.next();
+		System.out.print("digite sua idade; ");
+		novaidade = ler.nextInt();
+		
+		novocliente.setNome(novonome);
+		novocliente.setCpf(novocpf);
+		novocliente.setIdade(novaidade);
+		
+		System.out.println("novo nome : ");
+		System.out.println("novo cpf: ");
+		System.out.println(" nova idade: ");
+		
+	}
+}
